@@ -88,7 +88,7 @@ function getMostPopularAuthors(books, authors) {
   console.log('count', count)
 
   for( let id in count){
-    const sum = count[id].reduce((a,b) => a + b)
+    const sum = count[id].reduce((countA,countB) => countA + countB)
     count[id] = sum;
     // console.log('sum', sum)
   }
